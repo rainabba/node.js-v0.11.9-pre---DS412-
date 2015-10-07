@@ -29,15 +29,16 @@ Update and upgrade your packages so as to ensure that your installation is up to
 ### Prior compiling node.js
 Some prerequities have to be meet...
 
+
+Remove the not compatible `wget` package, you will remain on the `wget-ssl` package which is installed by optware-devel next:
+
+	ipkg remove wget
+	
 #### Get working libraries
 Install __optware__ development libraries:
 
 	ipkg install optware-devel
 
-Remove the not compatible `wget` package, you will remain on the `wget-ssl` package:
-
-	ipkg remove wget
-	
 Install packages __pythons 2.7__ and  __openssl__
 
 	ipkg install python27 open-ssl openssl-dev
